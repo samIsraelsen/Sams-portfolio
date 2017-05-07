@@ -1,0 +1,365 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Raleway', raleway, sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgba(17, 252, 225, 0.85);
+  margin-top: -22px;
+  border-bottom: 3px solid rgba(57, 63, 239, 0.85);
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+nav > ul > li {
+  flex-grow: 1;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  font-weight: 600;
+  
+}
+
+.bigName {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-weight: 200;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  padding: 7px 13px;
+  
+}
+
+a:visited,
+a:link {
+  color: black;
+}
+
+nav > ul > li > a:hover {
+  border-bottom: 1.5px solid rgb(57, 63, 239);
+}
+
+nav > ul > li > a:active {
+  border: 2px solid rgb(57, 63, 239);
+  border-radius: 2px;
+}
+
+.mainContent {
+  margin: 0 auto;
+  width: 90%;
+  flex-grow: 1;
+}
+
+.secondaryHeaders {
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 3px solid rgb(17, 252, 225);
+}
+
+.underAbout {
+  text-align: center;
+  font-weight: 600;
+}
+
+#profilePic {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+  border: none;
+  box-shadow: 1px 1px 20px rgba(0,0,0, 0.3);
+}
+
+.smallHeaders {
+  text-align: center;
+  font-weight: 600;
+  margin: 0 35%;
+  border-bottom: 3px solid rgb(17, 252, 225);
+}
+
+.aboutParas {
+  text-align: center;
+}
+
+/******** FOOTER START *******/
+footer {
+  background-color: rgb(17, 252, 225);
+  padding-top: 10px;
+  padding-bottom: 1px;
+  text-align: center;
+  border-top: 3px solid rgb(57, 63, 239);
+}
+
+.copyright {
+  margin-top: -1px;
+} 
+
+.codeByLove {
+  margin-top: -30px;
+}
+
+.heartGif {
+  display: inline-block;
+  margin-top: 6px;
+}
+/******** FOOTER END *******/
+
+/******** MY WORK PAGE START *******/
+
+#portfolio {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.tertiaryHeaders {
+  font-weight: 600;
+  text-align: center;
+}
+
+.portfolioHeaders {
+  font-weight: 600;
+  margin: 15px 10%;
+  text-align: center;
+  border-bottom: 3px solid rgb(17, 252, 225);
+}
+
+#bitterwaterPic,
+#codepenPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.portfolioParas {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#comingSoon {
+  text-align: center;
+  border: 4px solid red;
+  border-radius: 5px;
+  box-shadow: 1px 1px 14px;
+  background-color: #fff;
+}
+
+#comingSoon > h3 {
+  font-weight: 400;
+}
+
+
+/********** MY WORK PAGE END ********/
+
+/********** CONTACT PAGE START ********/
+
+#contact {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 30px;
+}
+
+.contactDescription {
+  font-weight: 400;
+  text-align: center;
+}
+
+#contact > ul > li {
+  list-style-type: square;
+  font-weight: 400;
+  margin: 8px;
+}
+
+#contact > ul > li > a {
+  text-decoration: none;
+}
+
+#contact > ul > li > a:hover {
+  color: rgb(57, 63, 239);
+  border-bottom: 2px solid rgb(57, 63, 239);
+}
+
+/********** CONTACT PAGE END **********/
+
+/**********  GO BACK UP BUTTON START **********/
+/*
+#backToTop {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(57, 63, 239,0.8);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 30%;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+#backToTop:hover {
+  background: rgb(57, 63, 239);
+}
+*/
+
+/********** GO BACK UP BUTTON END *************/
+
+/********** MEDIA QUERIES START *************/
+@media screen and (min-width: 600px){
+  nav > ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav > ul > li {
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+
+@media screen and (min-width: 850px) {
+  
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+  }
+  
+  .aboutAbout {
+    flex-grow: 1.5;
+    margin-right: 30px;
+  }
+  
+  .aboutSkills {
+    flex-grow: 1;
+  }
+  
+  .smallHeaderGroup {
+    margin-top: 55px;
+  }
+  
+  .smallHeaders {
+    margin: 20px;
+  }
+  
+  .bigName {
+    padding: 10px;
+  }
+  
+  .main-nav {
+    margin-top: 30px;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  
+  .main-header > .container {
+    display: flex;
+  }
+  
+  .main-header > .container > .bigName {
+    flex-grow: 1;
+  }
+  
+  .main-header > .container > .main-nav {
+    flex-grow: 3;
+  }
+  
+  #portfolio {
+    padding-top: 80px;
+    width: 85%;
+  }
+  
+  .portfolioHeaders {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .mainFooter > .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .logoIcons {
+    flex-grow: .5;
+  }
+  
+  .belowLogos {
+    flex-grow: 2;
+  }
+  
+  .mainFooter > .container > .logoIcons > a {
+    margin: 5px 10px;
+  }
+  
+}
+
+@media screen and (min-width: 1000px) {
+  
+  .actualPortfolios {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  
+  #bitterwaterGroup {
+    flex-grow: 1;
+    max-width: 40%;
+    margin-right: 5%;
+  }
+  
+  #codepenGroup {
+    flex-grow: 1;
+    max-width: 40%;
+    margin-left: 5%
+  }
+  
+  #comingSoon {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  
+  #contact {
+    margin-bottom: 40px;
+  }
+  
+  #contact > ul {
+    display: inline-block;
+    margin-left: 15%
+  }
+  
+}
+/********** MEDIA QUERIES END *************/
+
+
+
+
